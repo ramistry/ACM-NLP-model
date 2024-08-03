@@ -18,3 +18,9 @@ In this project, we decided to build such ML model: the Urgency Classifier.
 * `data` data (csv) we used to train model
 
 ## 4. Technologies Used and Requirements for Use
+* `Python`
+* `PyTorch`: open-source machine learning library used for building and training the model.
+* `Transformers (Hugging Face)`: A library providing pre-trained transformer models, including BERT.
+* `Pandas`: data manipulation and analysis library.
+* `scikit-learn`: library used for splitting the dataset into training and testing sets.
+* `TQDM`: library for displaying progress bars during training.

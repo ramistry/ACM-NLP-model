@@ -13,6 +13,11 @@ In this project, we decided to build such ML model: the Urgency Classifier.
 
 ## 2. Dataset
 
+The dataset used for training and evaluating the urgency classifier model consists of customer support tickets. Each ticket includes a textual description of the issue and a corresponding priority label indicating the urgency of the issue. The dataset is stored in a CSV file with the following columns:
+
+Ticket Description: A textual description of the customer's issue or request.
+Ticket Priority: The urgency level of the ticket, which can be one of the following categories: "Low", "Medium", "High", "Critical".
+
 ## 3. Structure
 * `Files` urgency_classifier.py: The main script for training and evaluating the urgency classifier model. README.md: This readme file.
 * `data` data (csv) we used to train model

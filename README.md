@@ -18,13 +18,3 @@ In this project, we decided to build such ML model: the Urgency Classifier.
 * `data` data (csv) we used to train model
 
 ## 4. Technologies Used and Requirements for Use
-
-
-## 5. Difficulties
-
-## 6. Author Info
-- Keerthi Nalabotu (mentor): [GitHub](https://github.com/keerthinalabotu)
-- Sia Patodia (mentor): [GitHub](https://www.google.com/) goog
-- Kiran Garre: [GitHub](https://www.google.com/) goog
-- Hikaru Isayama: [GitHub](https://github.com/SeanIsayama)
-- Rishab Bora: [GitHub](https://www.google.com/) goog

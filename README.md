@@ -21,7 +21,7 @@ Ticket Priority: The urgency level of the ticket, which can be one of the follow
 
 ## 3. Structure
 * `Files` urgency_classifier.py: The main script for training and evaluating the urgency classifier model. README.md: This readme file.
-* `data` data (csv) we used to train model
+* `data` customer_support_tickets.csv data (csv) we used to train model
 
 ## 4. Technologies Used and Requirements for Use
 * `Python`

@@ -59,7 +59,7 @@ priority_mapping = {
     "Critical": 3
 }
 try:
-    file_path = 'customer_support_tickets.csv'  # Update this path to the correct location
+    file_path = 'customer_support_tickets.csv'
     data = pd.read_csv(file_path)
     data = data[['Ticket Description', 'Ticket Priority']]
     data['Ticket Priority'] = data['Ticket Priority'].map(priority_mapping)

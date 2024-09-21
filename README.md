@@ -19,7 +19,7 @@ Ticket Description: A textual description of the customer's issue or request.
 Ticket Priority: The urgency level of the ticket, which can be one of the following categories: "Low", "Medium", "High", "Critical".
 
 ## 3. Structure
-* `Files` urgency_classifier.py: The main script for training and evaluating the urgency classifier model. README.md: This readme file.
+* `Files` model_training_corrected.py: The main script for training and evaluating the urgency classifier model. README.md: This readme file. 
 * `data` customer_support_tickets.csv data (csv) we used to train model
 
 ## 4. Technologies Used and Requirements for Use

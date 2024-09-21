@@ -8,16 +8,15 @@ In emergency response scenarios, time is of the essence. Imagine two incoming me
 The ability to automatically classify the urgency of support tickets or emergency messages can significantly enhance response times and resource allocation, potentially saving lives and improving service efficiency. Developing such a machine learning (ML) model involves creating an NLP system that can interpret and prioritize textual information based on its urgency.
 In this project, we aim to build a robust ML model: the Urgency Classifier. This classifier will analyze text descriptions of support tickets or emergency messages and classify them into different urgency levels. By leveraging the power of transformers and BERT (Bidirectional Encoder Representations from Transformers), our model will be trained to understand the context and urgency embedded within the text.
 <br />
-<br />
-In this project, we decided to build such ML model: the Urgency Classifier.
 
 ## 2. Dataset
 
-The dataset used for training and evaluating the urgency classifier model consists of customer support tickets. 
-Each ticket includes a textual description of the issue and a corresponding priority label indicating the urgency of the issue. The dataset is stored in a CSV file with the following columns:
+The dataset used for training and evaluating the Chartered Accountancy question-answering model consists of a collection of textual content related to various topics in the field of CA. The dataset is stored in a CSV file with the following columns:
 
-Ticket Description: A textual description of the customer's issue or request.
-Ticket Priority: The urgency level of the ticket, which can be one of the following categories: "Low", "Medium", "High", "Critical".
+Topic: The category or topic of the question (e.g., "Accounting Standards", "Taxation", "Corporate Law").
+Content: The actual content or description from the dataset (e.g., accounting standard, tax law).
+Question: A relevant question related to the content.
+Answer: The corresponding answer, either model-generated or manually curated.
 
 ## 3. Structure
 * `Files` urgency_classifier.py: The main script for training and evaluating the urgency classifier model. README.md: This readme file.

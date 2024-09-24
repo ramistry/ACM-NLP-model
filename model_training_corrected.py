@@ -71,16 +71,11 @@ except KeyError as e:
 
 
 tokenizer = BertTokenizerFast.from_pretrained('bert-base-uncased')
-
-
 try:
     ds = CustomTextDataset(data, tokenizer)
 except NameError as e:
     print(f"Error: {e}")
-
 BATCH_SIZE = 20
-
-
 try:
     train_indices, test_indices = train_test_split(range(len(ds)), test_size=0.1)
     train_split = Subset(ds, train_indices)
@@ -93,8 +88,6 @@ except NameError as e:
 
 
 device = torch.device("cuda") if torch.cuda.is_available() else torch.device("cpu")
-
-
 try:
     model = BERTWithClassifierHead(num_classes=4)
     model.to(device)
@@ -125,7 +118,9 @@ try:
             optimizer.zero_grad()
 
 
-    res = tokenizer(text="Test Text. Hi, Hello!", padding='max_length', max_length=500, truncation=True, return_tensors='pt')
+    userinput = input("Please enter the text for priority prediction: ")
+    
+    res = tokenizer(text=userinput, padding='max_length', max_length=500, truncation=True, return_tensors='pt')
     res = {k: v.to(device) for k, v in res.items()}
     output = model(input_ids=res['input_ids'], attention_mask=res['attention_mask'])
     print(output)
